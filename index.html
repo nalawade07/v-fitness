@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ///// font  ///// -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Freehand&family=Kaisei+Tokumin:wght@400;500;700&family=Limelight&family=Poppins:wght@300;400;500&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <link href="http://fonts.cdnfonts.com/css/bauhaus-modern" rel="stylesheet">
+
+
+    <!-- //////  font awsome & box icon  ////// -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ///////// box icon  ///////// -->
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="svg_section">
+        <div class="bg_img">
+
+            <!-- ///////////////  heder section  /////////////////// -->
+
+            <header>
+                <div class="logo">
+                    <img src="IMG/food-logo.png" alt="">
+                </div>
+
+                <nav>
+                    <ul class="navbar" id="navbar">
+                        <li class="navli_1"><a href="#"> Home </a></li>
+                        <li class="navli_1"><a href="#"> About </a></li>
+                        <li class="navli_1"> <a href="#" id="categ_li"> Categories <i
+                                    class="fa-solid fa-caret-down"></i></a>
+
+                            <ul class="navbar_ul" id="categ_ul">
+                                <li><a href="#">Veg.</a></li>
+                                <li><a href="#">Non-Veg.</a></li>
+                                <li><a href="#">Cold-Drink.</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="navli_1"><a href="#"> Contact </a></li>
+                        <li class="navli_1"><a href="#"> Help </a></li>
+                    </ul>
+                </nav>
+
+                <div class="cart_log">
+                    <div class="burger" id="burger" onclick="menu()">
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <div class="login"> <a href="#"> login </a></div>
+                    <div class="cart"> <a href="#"> <i class="fa-solid fa-cart-arrow-down"></i> </a></div>
+                </div>
+
+            </header>
+
+            <!-- ///////////////  hero section  /////////////////// -->
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="wave" viewBox="0 0 1440 320">
+                <path fill-opacity="1"
+                    d="M0,224L60,240C120,256,240,288,360,288C480,288,600,256,720,224C840,192,960,160,1080,154.7C1200,149,1320,171,1380,181.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                </path>
+            </svg>
+
+            <div class="name">
+              <img src="IMG/logo_2.png" alt="">
+            </div>
+
+        </div>
+        <section class="wave_2">
+
+<div class="bg_small_img">
+    <div class="flavers">
+        <img src="IMG/leaf-flower.png" alt="">
+    </div>
+    <div class="tomato">
+        <img src="IMG/mirchi_tomatopng.png" alt="">
+</div>
+</div>
+
+
+<div class="about">
+
+<div class="about_container">
+
+<div class="burger_img">
+    <img src="IMG/burger.png" alt="">
+</div>
+
+<div class="menu_card">
+<div class="menu">
+    <div class="menu_hed">
+        <img src="IMG/deign_menu_top.png" alt="">
+       <h3> Special menu </h3>
+        <img src="IMG/deign_menu_bottom - Copy.png" alt="">
+    </div>
+<div class="names_menu">
+<li> <img src="IMG/spoons.png" alt=""> Veg.Noodels </li>
+<li> <img src="IMG/spoons.png" alt=""> Panneer Butter Chicken  </li>
+<li> <img src="IMG/spoons.png" alt=""> Sahi Biryani  </li>
+<li> <img src="IMG/spoons.png" alt=""> Chicken Kabab </li>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+        </section>
+
+
+
+    </section>
+
+
+
+<!-- /////////  js  ////////// -->
+
+
+    <script src="jquery.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('#categ_li').click(function () {
+
+                $('#categ_ul').toggle();
+
+            });
+
+            // $('#burger').click(function(){
+            //     $('#categ_ul').addClass('active');
+            // });
+
+        });
+
+
+        var burger = document.getElementById('burger');
+        var ul = document.getElementById('navbar');
+
+        function menu() {
+            ul.classList.toggle('active');
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
