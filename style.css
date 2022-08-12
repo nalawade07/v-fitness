@@ -759,6 +759,29 @@ font-size:1rem;
 }
 
 @media(max-width:430px){
+
+
+/* ////////////   heder    /////////////// */
+
+.cart_log i{
+    font-size:1.6rem;
+}
+.cart_log {
+    justify-content:center;
+    align-items: center;
+}
+.burger i{
+    font-size: 1.3rem;
+}
+.burger{
+    width:32px;
+    height:30px;
+    border-radius:40%;
+}
+.login a{
+    font-size:1.2rem;
+}
+
     /* ///////////////  hero section  ////////////// */
 
     .bg_img {
@@ -807,11 +830,11 @@ font-size:1rem;
 
 
 .burger_img{
-  width:212px;
-  height:250px;
+  width:214px;
+  height:257px;
 }
 .menu_card{
-  padding:0rem .6rem;
+  padding:.5rem .6rem;
 }
 .menu_hed img{
   width:190px;
@@ -823,6 +846,7 @@ font-size:1rem;
 
 .menu_hed h3{
 font-size:1rem;
+color: var(--olive);
 }
 .names_menu li{
     text-align: center;
