@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ////// crausel  ///// -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-- ///// font  ///// -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +39,7 @@
 
 <body>
     <section class="svg_section">
-        <div class="bg_img">
+        <div class="bg_img" id="home">
 
             <!-- ///////////////  heder section  /////////////////// -->
 
@@ -42,22 +48,27 @@
                     <img src="IMG/main_logo.png" alt="">
                 </div>
 
+                <div class="bike_animation">
+                    <img src="IMG/aniamtion D-cutout.png" alt="">
+                </div>
+
                 <nav>
                     <ul class="navbar" id="navbar">
-                        <li class="navli_1"><a href="#" class="navli_1_a"> Home </a></li>
-                        <li class="navli_1"><a href="#" class="navli_1_a"> About </a></li>
+                        <li class="navli_1"><a href="#home" class="navli_1_a"> Home </a></li>
+                        <li class="navli_1"><a href="#menu" class="navli_1_a"> Menu </a></li>
                         <li class="navli_1"> <a href="#" class="navli_1_a" id="categ_li"> Categories <i
                                     class="fa-solid fa-caret-down"></i></a>
 
                             <ul class="navbar_ul" id="categ_ul">
-                                <li class="navli_2"><a href="#">Veg.</a></li>
-                                <li class="navli_2"><a href="#">Non-Veg.</a></li>
-                                <li class="navli_2"><a href="#">Cold-Drink.</a></li>
+                                <li class="navli_2"><a href="#categorie">Veg.</a></li>
+                                <li class="navli_2"><a href="#categorie">Non-Veg.</a></li>
+                                <li class="navli_2"><a href="#categorie">Cold-Drink.</a></li>
                             </ul>
 
                         </li>
-                        <li class="navli_1"><a href="#" class="navli_1_a"> Contact </a></li>
-                        <li class="navli_1"><a href="#"class="navli_1_a"> Help </a></li>
+                        <li class="navli_1"><a href="#food" class="navli_1_a"> Food </a></li>
+                        <li class="navli_1"><a href="#about" class="navli_1_a"> About </a></li>
+                        <li class="navli_1"><a href="#footer"class="navli_1_a"> Help </a></li>
                     </ul>
                 </nav>
 
@@ -101,7 +112,7 @@
 
 <div class="about_container">
 
-<div class="burger_img">
+<div class="burger_img" id="menu">
     <img src="IMG/burger.png" alt="">
 </div>
 
@@ -130,9 +141,10 @@
 
 </div>
 
-<!-- /////////////////   food section   ///////////////// -->
+<!-- /////////////////   categories section   ///////////////// -->
 
-<div class="food-start">
+
+<div class="food-start" id="categorie">
 
     <div class="section_name">
         <div class="content">
@@ -140,7 +152,7 @@
                 <img src="IMG/firechilli.png" alt="">
             </div>
             <div class="sec_name">
-            <h2> <span> Best </span> Food </h2>
+            <h2> <span> Food </span> categories </h2>
         </div>
         <!-- <div class="img">
         <img src="IMG/leaf2.png" alt="">
@@ -148,7 +160,379 @@
         </div>
     </div>
 
+
+ <div class="food_container owl-carousel owl-theme">
+
+    <div class="food_bg">
+        <div class="foods">
+            <img src="IMG/home-img-1.png" alt="">
+        </div>
+        <div class="button">
+            <h3> <a href="#"> view more </a> </h3>
+         </div>
+    </div> 
+
+    <div class="food_bg">
+        <div class="foods">
+            <img src="IMG/home-img-2.png" alt="">
+        </div>
+        <div class="button">
+            <h3> <a href="#"> view more </a> </h3>
+         </div>
+    </div>
+    
+    <div class="food_bg">
+        <div class="foods">
+            <img src="IMG/home-img-3.png" alt="">
+        </div>
+        <div class="button">
+            <h3> <a href="#"> view more </a> </h3>
+         </div>
+    </div>
+
+    <div class="food_bg">
+        <div class="foods">
+            <img src="IMG/pngaaa.com-1450531.png" alt="">
+        </div>
+        <div class="button">
+            <h3> <a href="#"> view more </a> </h3>
+         </div>
+    </div>
+
+
+
+    <div class="food_bg">
+        <div class="foods">
+            <img src="IMG/dish-5.png" alt="">
+        </div>
+        <div class="button">
+            <h3> <a href="#"> view more </a> </h3>
+         </div>
+    </div>
+
+
+    </div>
+
 </div>
+
+
+<!-- /////////////////    food section    //////////////////// -->
+
+
+
+<div class="foodsection" id="food">
+
+<div class="section_name">
+    <div class="content best_food">
+        <div class="img">
+            <img src="IMG/firechilli.png" alt="">
+        </div>
+        <div class="sec_name">
+        <h2> <span> Best </span> foods </h2>
+    </div>
+    <!-- <div class="img">
+    <img src="IMG/leaf2.png" alt="">
+</div> -->
+    </div>
+</div>
+
+<div class="foods_container_lightgray">
+
+<div class="foods_column">
+
+<div class="food_produt__darkgry">
+    <div class="inro">
+    <div class="food_col_img">
+        <img src="IMG/dish-3.png" alt="">
+    </div>
+    <hr>
+<div class="price_btn">
+    <div class="price">
+        <h4><span>60</span> $</h4>
+    </div>
+ <div class="btns">
+    <a href="#" class="buy">Buy</a>
+    <a href="#" class="add_cart">Add cart</a>
+ </div>   
+</div>
+</div>
+
+</div>
+
+<div class="food_produt__darkgry">
+    <div class="inro">
+    <div class="food_col_img">
+        <img src="IMG/6.png" alt="">
+    </div>
+    <hr>
+<div class="price_btn">
+ <div class="price">
+    <h4><span>60</span> $</h4>
+</div>
+ <div class="btns">
+    <a href="#" class="buy">Buy</a>
+    <a href="#" class="add_cart">Add cart</a>
+ </div>   
+</div>
+</div>
+</div>
+
+
+
+<div class="food_produt__darkgry">
+    <div class="inro">
+    <div class="food_col_img">
+        <img src="IMG/about-img.png" alt="">
+    </div>
+    <hr>
+<div class="price_btn">
+    <div class="price">
+        <h4><span>60</span> $</h4>
+    </div>
+ <div class="btns">
+    <a href="#" class="buy">Buy</a>
+    <a href="#" class="add_cart">Add cart</a>
+ </div>   
+</div>
+</div>
+
+</div>
+
+
+<div class="food_produt__darkgry">
+    <div class="inro">
+    <div class="food_col_img">
+        <img src="IMG/2.png" alt="">
+    </div>
+<hr>
+
+<div class="price_btn">
+    <div class="price">
+        <h4><span>60</span> $</h4>
+    </div>
+ <div class="btns">
+     <a href="#" class="buy">Buy</a>
+     <a href="#" class="add_cart">Add cart</a>
+ </div>   
+</div>
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<div class="foods_container_lightgray">
+
+    <div class="foods_column">
+    
+    <div class="food_produt__darkgry">
+        <div class="inro">
+        <div class="food_col_img">
+            <img src="IMG/1.png" alt="">
+        </div>
+        <hr>
+    <div class="price_btn">
+        <div class="price">
+            <h4><span>60</span> $</h4>
+        </div>
+     <div class="btns">
+        <a href="#" class="buy">Buy</a>
+        <a href="#" class="add_cart">Add cart</a>
+     </div>   
+    </div>
+    </div>
+    
+    </div>
+    
+    <div class="food_produt__darkgry">
+        <div class="inro">
+        <div class="food_col_img">
+            <img src="IMG/4.png" alt="">
+        </div>
+        <hr>
+    <div class="price_btn">
+     <div class="price">
+        <h4><span>60</span> $</h4>
+    </div>
+     <div class="btns">
+        <a href="#" class="buy">Buy</a>
+        <a href="#" class="add_cart">Add cart</a>
+     </div>   
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <div class="food_produt__darkgry">
+        <div class="inro">
+        <div class="food_col_img">
+            <img src="IMG/sushi.png" alt="">
+        </div>
+        <hr>
+    <div class="price_btn">
+        <div class="price">
+            <h4><span>60</span> $</h4>
+        </div>
+     <div class="btns">
+        <a href="#" class="buy">Buy</a>
+        <a href="#" class="add_cart">Add cart</a>
+     </div>   
+    </div>
+    </div>
+    
+    </div>
+    
+    
+    <div class="food_produt__darkgry">
+        <div class="inro">
+        <div class="food_col_img">
+            <img src="IMG/dish-6.png" alt="">
+        </div>
+    <hr>
+    
+    <div class="price_btn">
+        <div class="price">
+            <h4><span>60</span> $</h4>
+        </div>
+     <div class="btns">
+         <a href="#" class="buy">Buy</a>
+         <a href="#" class="add_cart">Add cart</a>
+     </div>   
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    </div>
+    
+    </div>
+
+</div>
+
+
+<!-- /////////////////    about section    //////////////////// -->
+
+
+
+<!-- <div class="about_start"> -->
+
+    <div class="section_name" id="about">
+        <div class="content best_food">
+            <div class="img">
+                <img src="IMG/firechilli.png" alt="">
+            </div>
+            <div class="sec_name">
+            <h2> <span> About </span> us </h2>
+        </div>
+        <!-- <div class="img">
+        <img src="IMG/leaf2.png" alt="">
+    </div> -->
+        </div>
+    </div>
+
+
+<div class="about_bg">
+
+
+
+<div class="food_about_container">
+
+<div class="about_content">
+<div class="about_spisy">
+<img src="IMG/firechilli.png" alt="">
+</div>
+
+<div class="about_text">
+    <h3> <span> Spicy </span> Food</h3>
+    <p>
+        the best spicy food's available here
+        Lorem ipsum dolor sit amet consectetur adipisicing elit
+        Necessitatibus amet voluptatum architecto dolorem excepturi minus
+         dolor inventore nisi illum
+        doloribus possimus dolorum molestias aliquam explicabo.
+    </p>
+</div>
+
+</div>
+
+
+<div class="about_content">
+    <div class="about_spisy">
+    <img src="IMG/quality-2.png" alt="">
+    </div>
+    
+    <div class="about_text">
+        <h3> <span> Safe and </span> tasty</h3>
+        <p>
+         we provide safe food with good quality
+         Lorem ipsum dolor sit amet consectetur adipisicing elit 
+         Necessitatibus amet voluptatum architecto dolorem excepturi minus
+          dolor inventore nisi illum
+         doloribus possimus dolorum molestias aliquam explicabo.
+        </p>
+    </div>
+    
+    </div>
+
+
+</div>
+
+</div>
+
+
+<!-- ////////////////////     footer     /////////////////// -->
+
+
+<footer>
+
+<div class="footer_section" id="footer">
+
+    <div class="foter_logo_flex">
+        <div class="logo_footer">
+            <img src="IMG/main_logo.png" alt="">
+        </div>
+<div class="footer_link">
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#categorie">Categories</a>
+    <a href="#food">Food</a>
+    <a href="#about">about</a>
+</div>
+</div>
+
+<div class="location">
+
+<div class="address">
+<div class="name_addres">
+  <span>  <i class="fa-solid fa-address-card"></i>  Address:- </span>
+</div>
+<div class="text_address">
+  <span> Mumbai (E) 499002 </span>
+</div>
+</div>
+
+<div class="address">
+    <div class="name_addres">
+      <span>  <i class="fa-solid fa-phone"></i>  Phone:- </span>
+    </div>
+    <div class="text_address">
+      <span> 784145(888) </span>
+    </div>
+    </div>
+
+</div>
+
+
+</div>
+
+</footer>
+
 
 
 
@@ -165,7 +549,32 @@
 
     <script src="jquery.js"></script>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            365:{
+                items:2
+            },
+            600:{
+                items:3
+            },
+            900:{
+                items:4
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
 
         $(document).ready(function () {
 
